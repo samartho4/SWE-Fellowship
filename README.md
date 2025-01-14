@@ -1,4 +1,4 @@
-#Headstarter SWE Fellowship Journey 🚀💻
+# Headstarter SWE Fellowship Journey 🚀💻
 
 Welcome to my GitHub repository documenting my journey through the **Headstarter AI Software Engineering Fellowship**, a rigorous 7-week program where I built 5 AI-driven projects and honed my software engineering skills. This repository serves as a showcase of my learning, growth, and technical accomplishments, and is designed to demonstrate my readiness for a career in software engineering.
 
