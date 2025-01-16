@@ -69,5 +69,10 @@ The **Headstarter AI SWE Fellowship** is an intensive program designed to prepar
 Each folder contains the project code, documentation, and key learnings.
 
 ---
-## Author
-[Samarth Sharma](https://github.com/samartho4)
+## Authors
+- [Paras Singh](https://github.com/data-dude42)
+- [Khwahish Vaid](https://github.com/khwahish1509)
+- [Samarth Sharma](https://github.com/samartho4)
+
+
+
