@@ -1,0 +1,335 @@
+body {
+    color: #eee;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-image:
+        repeating-linear-gradient(
+            to right, #2d2a44 0 1px, transparent 2px 200px
+        ),
+        repeating-linear-gradient(
+            to bottom, #2d2a44 0 1px, transparent 2px 200px
+        ),
+        radial-gradient(
+            at 50% 50%, #2d2a44, #1d1b34
+        );
+    min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+/* Header Styles */
+header {
+    width: min(1200px, 90vw);
+    margin: auto;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #afaeae25;
+}
+
+header img {
+    width: 30px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+header nav ul li a {
+    color: #eee;
+    text-decoration: none;
+    transition: 0.3s;
+    position: relative;
+}
+
+header nav ul li a:hover {
+    color: #c691e6;
+}
+
+header nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-image: linear-gradient(to right, #89a5df, #c691e6);
+    transition: 0.3s;
+}
+
+header nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Banner Section */
+main .banner {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    padding-top: 70px;
+    position: relative;
+}
+
+.title-container {
+    margin: 20px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+}
+
+h1 {
+    --to: left;
+    font-size: clamp(2em, 8vw, 4em);
+    font-weight: bold;
+    background-image: linear-gradient(
+        to var(--to), #89a5df, #e46e7f, #e8e191
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    line-height: 1em;
+}
+
+h1.right {
+    --to: right;
+}
+
+.cta-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.banner button {
+    all: unset;
+    border: 1px solid #afaeae55;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-image: linear-gradient(
+        to bottom, #eee1, transparent, #eee1
+    );
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.banner button:hover {
+    background-color: #c691e6;
+    color: #040018;
+    box-shadow: 0 0 50px #c691e6;
+}
+
+.banner button.secondary {
+    border-color: #89a5df55;
+}
+
+.banner button.secondary:hover {
+    background-color: #89a5df;
+    box-shadow: 0 0 50px #89a5df;
+}
+
+/* Canvas */
+.banner #dotsCanvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+/* Portfolio Sections */
+section {
+    min-height: 100vh;
+    width: min(1200px, 90vw);
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    background-image: linear-gradient(to right, #89a5df, #e46e7f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Projects Grid */
+#projects {
+    display: grid;
+    gap: 30px;
+}
+
+.project-card {
+    background: linear-gradient(145deg, #2d2a4455, #1d1b3455);
+    border: 1px solid #afaeae25;
+    border-radius: 20px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px #c691e622;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #afaeae25;
+    margin-top: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul {
+        gap: 15px;
+    }
+
+    .cta-container {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+}
+
+/* Portfolio Sections */
+section {
+    min-height: 100vh;
+    width: min(1200px, 90vw);
+    margin: 0 auto;
+    padding: 100px 0;
+    background-color: #1d1b34;
+}
+
+/* Projects Header */
+#projects h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    background-image: linear-gradient(to right, #89a5df, #e46e7f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Project Cards */
+.project-card {
+    background: linear-gradient(145deg, #2d2a4455, #1d1b3455);
+    border: 1px solid #afaeae25;
+    border-radius: 15px;
+    padding: 20px;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    background-color: #2d2a44;
+    color: #fff;
+}
+
+.project-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #c691e6;
+    text-align: center;
+}
+
+/* Hover Effect */
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.project-card p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+/* Project Card Description */
+.project-card code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #333;
+    padding: 2px 6px;
+    border-radius: 5px;
+    color: #ffab00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        padding: 50px 20px;
+    }
+
+    .project-card h3 {
+        font-size: 1.5em;
+    }
+
+    .project-card p {
+        font-size: 1em;
+    }
+}
+
+/* Typewriter Effect */
+@keyframes typewriter {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.project-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #c691e6;
+    text-align: left; /* Keeps the text aligned to the left */
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    border-right: 2px solid #c691e6; /* Cursor effect */
+    animation: typewriter 3s steps(30) 1s 1 normal both;
+}
+
+/* Ensure the animation repeats and behaves properly */
+.project-card h3::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #c691e6;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    50% {
+        background-color: transparent;
+    }
+}
