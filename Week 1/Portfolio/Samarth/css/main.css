@@ -1,0 +1,128 @@
+body {
+    font-family: "Georgia", serif;
+    background-color: #f9f9f9;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;  /* Adjust if too big */
+    font-weight: 500;
+    margin-left: 90px;  /* Increase or decrease to align left */
+    margin-top: 20px;  /* Adjust spacing from top */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+
+}
+
+
+.profile-img {
+    width: 50px;
+    height: auto;
+    transform: rotate(180deg);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav ul li a.active {
+    background-color: #c1857a;
+    border-radius: 5px;
+}
+
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: left;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: "Dancing Script", cursive;
+    text-align: left;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    margin-bottom: 10px;
+}
+
+.social-links li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+}
+
+details {
+    margin-top: 20px;
+}
+
+details summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.other-links {
+    list-style: none;
+    padding: 0;
+}
+
+.other-links li {
+    margin: 10px 0;
+}
+
+.other-links a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.footer-content {
+    text-align: left;
+}
+
+.footer-content a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-img {
+    width: 80px;
+    height: auto;
+}
