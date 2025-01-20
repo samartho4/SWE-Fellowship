@@ -1,0 +1,291 @@
+body {
+    background-image: url("backimg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Calibri';
+}
+
+.h1 {
+    position: center;
+    margin-top: .0%;
+    margin-left: 0.6%;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    filter: drop-shadow(5px 5px 5px rgb(192, 6, 108));
+
+}
+
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.letter {
+    font-style: calc();
+    color: color-mix(in srgb-linear, #f5eeee 100%, #d7d1d3 100%);
+    font-weight: calc();
+    animation: fade-in 3.5s ease-in;
+
+}
+
+
+.blog-container {
+    position: absolute;
+    /* Change position to fixed */
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(to right, #393738, #333336);
+    padding: 0.5rem 1rem;
+    /* Adjust padding to make the container smaller */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.2));
+    z-index: 999;
+    /* Ensure it appears above other content */
+    filter: drop-shadow(0px 0px 10px rgb(197, 9, 90));
+    transition: transform 1s, box-shadow 0.3s, top 0.3s;
+}
+
+.notes-container {
+    position: absolute;
+    /* Change position to fixed */
+    top: 20px;
+    left: 50%;
+    transform: translateX(-220%);
+    background: linear-gradient(to right, #393738, #333336);
+    padding: 0.5rem 1rem;
+    /* Adjust padding to make the container smaller */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.2));
+    z-index: 999;
+    /* Ensure it appears above other content */
+    transition: background-color 3s ease-in-out;
+    filter: drop-shadow(0px 0px 10px rgb(197, 9, 90));
+}
+
+.notes {
+    font-size: 1.5rem;
+    /* Adjust font size */
+    color: rgb(255, 255, 255);
+    text-shadow: 0 2px 3px rgb(3, 17, 54);
+    animation: glow 1.5s infinite alternate;
+    margin: 0;
+
+}
+
+
+.Blogs {
+    font-size: 1.5rem;
+    /* Adjust font size */
+    color: rgb(255, 255, 255);
+    text-shadow: 0 2px 3px rgb(3, 17, 54);
+    animation: glow 1.5s infinite alternate;
+    margin: 0;
+
+}
+
+.contact-container {
+    position: absolute;
+    /* Change position to fixed */
+    top: 20px;
+    left: 50%;
+    transform: translateX(100%);
+    background: linear-gradient(to right, #393738, #333336);
+    padding: 0.5rem 1rem;
+    /* Adjust padding to make the container smaller */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.2));
+    z-index: 999;
+    /* Ensure it appears above other content */
+    transition: background-color 3s ease-in-out;
+    filter: drop-shadow(0px 0px 10px rgb(192, 6, 93));
+
+
+
+}
+
+.ContactMe {
+    font-size: 1.5rem;
+    /* Adjust font size */
+    color: rgb(255, 255, 255);
+    text-shadow: 0 2px 3px rgb(3, 17, 54);
+    animation: glow 1.5s infinite alternate;
+    margin: 0;
+
+}
+
+.intro-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.intro-container p {
+    color: rgb(200, 198, 195);
+    font-family: 'Calibri';
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: center;
+    margin: 0;
+}
+
+.intro-container {
+    position: relative;
+    /* Added to allow control over positioning */
+    top: 55px;
+    /* Initial vertical position */
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #817d86 0%, #43464c 100%);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s, top 0.3s;
+    /* Added top to transition properties */
+    filter: drop-shadow(0px 0px 10px rgb(192, 6, 93));
+}
+
+
+.inner {
+    padding-top: 20px;
+
+}
+
+.header {
+    text-align: center;
+    color: #ffffff;
+    padding: 0.1rem;
+    position: relative;
+}
+
+.header:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 100px;
+    background-color: #fff;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: .00rem;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.skill-icon {
+    padding: 1rem;
+    color: #ddd;
+    cursor: pointer;
+
+}
+
+.skill-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+
+}
+
+.skill-icon {
+    width: 50px;
+    z-index: 2;
+}
+
+.img {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    border-radius: 45px;
+    background-color: #343233;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+
+}
+.skill-title h3{
+    color: #ede7eb;
+    margin: 0.5rem;
+
+}
+
+.img::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:50%;
+    height: 90px;
+    background-color: rgba(100,100,100,0.5);
+    border-radius: 45px 0 0 45px;
+}
+
+
+.skill-title:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 35px;
+    height: 4px;
+    border-radius: 2px 0 0 2px;
+    background-color: rgb(170, 170, 170);
+    transition: .5s;
+
+}
+
+.skill-title:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 35px;
+    height: 4px;
+    border-radius: 0 2px 2px 0;
+    background-color: rgb(105, 97, 86);
+    transition: .5s;
+
+}
+
+.skill-box:hover > .skill-title:after, .skill-box:hover > .skill-title:before{
+    width:35px;
+
+}
+
+.skill-box:hover .img{
+    transform: translateY(-10px);
+}
+
+@media screen and (max-width: 990px){
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 50px;
+    }
+}
+
