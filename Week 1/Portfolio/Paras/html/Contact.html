@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ContactMe©</title>
+        <link rel="stylesheet" href="contact.css">
+    </head>
+    <body>
+        <div class="home-container">
+            <a href="index.html" class="home"> HOME </a>
+            </a>
+        </div>
+    
+
+
+        <div class="image-container">
+            <img src="image.jpeg" alt="myImage">
+        </div>
+
+        <section class="contact">
+            <h2><b>Let's Talk</b></h2>
+
+            <form action="#">
+                <div class="input-box">
+                    <div class="input-field field">
+                        <input type="text" placeholder="FullName" id="name"
+                            class="item" autocomplete="off">
+                        <div class="error-txt">Full Name can't be Empty</div>
+                    </div>
+                    <div class="input-field field">
+                        <input type="text" placeholder="EmailAddress" id="email"
+                            class="item" autocomplete="off">
+                        <div class="error-txt email">Email-address can't be
+                            Empty</div>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <div class="input-field field">
+                        <input type="text" placeholder="PhoneNumber" id="phone"
+                            class="item" autocomplete="off">
+                        <div class="error-txt">Phone Number can't be Empty</div>
+                    </div>
+                    <div class="input-field field">
+                        <input type="text" placeholder="Subject" id="subject"
+                            class="item" autocomplete="off">
+                        <div class="error-txt">Subject can't be Empty</div>
+                    </div>
+                </div>
+
+                <div class="textarea-field field">
+                    <textarea name id="message" cols="30" rows="10"
+                        placeholder="Your Message" class="item"
+                        autocomplete="off"></textarea>
+                    <div class="error-txt">Message Can't be Empty</div>
+                </div>
+                <button type="submit"><b>Send Message</b></button>
+            </form>
+        </section>
+
+        <ul class="social-container">
+            <li><a href="https://www.linkedin.com/in/paras-singh-660864218/"class="social-icon">
+                <div class="img">
+                    <img src="linkedinlogo.png"  class="skill-icon">
+                   </div> 
+            </li>
+                <li><a href="https://www.instagram.com/paras_singh.ca/"class="social-icon">
+                    <div class="img">
+                        <img src="insta.png"  class="skill-icon">
+                       </div> 
+                </li>
+                    <li><a href="https://github.com/data-dude42?ocid=AIDcmmli8vlwie_SEM__k_a3c4c1e2913617d5310fa79d0332d582_k_"class="social-icon">
+                        <div class="img">
+                            <img src="git.png"  class="skill-icon">
+                           </div> 
+                    </li>
+        </ul>
+
+
+
+
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="Contact.js"> </script>
+
+    </body>
+</html>
